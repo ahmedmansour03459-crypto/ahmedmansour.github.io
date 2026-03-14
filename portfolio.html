@@ -1,64 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Mansour's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 20px; }
-        header { text-align: center; padding: 50px; }
-        h1 { color: #333; }
-        section { margin: 20px 0; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        footer { text-align: center; margin-top: 20px; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 10px; border: 1px solid #ddd; }
-        th { background: #f2f2f2; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Ahmed Mansour</h1>
-        <h2>Power BI Data Analyst</h2>
-    </header>
-    <section>
-        <h3>About Me / عني</h3>
-        <p>Experienced Power BI Data Analyst with a passion for turning data into meaningful insights.</p>
-    </section>
-    <section>
-        <h3>Skills / المهارات</h3>
-        <ul>
-            <li>Power BI Visualizations / تصورات Power BI</li>
-            <li>Data Analysis / تحليل البيانات</li>
-            <li>Dashboard Development / تطوير لوحات المعلومات</li>
-            <li>SQL / SQL</li>
-            <li>Excel / Excel</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Projects / المشاريع</h3>
-        <table>
-            <tr>
-                <th>Project Name / اسم المشروع</th>
-                <th>Description / الوصف</th>
-            </tr>
-            <tr>
-                <td>Sales Dashboard / لوحة معلومات المبيعات</td>
-                <td>A comprehensive sales monitoring dashboard.</td>
-            </tr>
-            <tr>
-                <td>Marketing Insights / رؤى التسويق</td>
-                <td>Analysis of marketing performance metrics.</td>
-            </tr>
-        </table>
-    </section>
-    <section>
-        <h3>Contact / الاتصال</h3>
-        <p>Email: ahmed@mansour.com</p>
-        <p>Phone: +123456789</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Ahmed Mansour</p>
-    </footer>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محفظة أحمد منصور</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo', sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color:white;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+position:relative;
+overflow:hidden;
+}
+
+header::before{
+content:'';
+position:absolute;
+width:400px;
+height:400px;
+background:radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+border-radius:50%;
+top:-100px;
+left:-100px;
+animation:float 6s ease-in-out infinite;
+}
+
+header::after{
+content:'';
+position:absolute;
+width:300px;
+height:300px;
+background:radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+border-radius:50%;
+bottom:-50px;
+right:-50px;
+animation:float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float{
+0%, 100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(20px);
+}
+}
+
+header h1{
+font-size:60px;
+margin-bottom:15px;
+font-weight:700;
+text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+position:relative;
+z-index:1;ackground:linear-gradient(135deg, #38bdf8, #a78bfa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+}
+
+header p{
+font-size:22px;
+color:#e0e7ff;
+position:relative;
+z-index:1;
+margin-bottom:30px;
+font-weight:300;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 40px;
+background:linear-gradient(135deg, #38bdf8, #06b6d4);
+color:#000;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:all 0.3s ease;
+box-shadow:0 10px 30px rgba(56, 189, 248, 0.3);
+position:relative;
+z-index:1;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 40px rgba(56, 189, 248, 0.5);
+background:linear-gradient(135deg, #06b6d4, #38bdf8);
+}
+
+/* ===== SECTIONS ===== */
+section{
+padding:100px 10%;
+position:relative;
+z-index:1;
+}
+
+section:nth-child(odd){
+background:#0f172a;
+}
+
+section:nth-child(even){
+background:#1a2332;
+}
+
+title{
+font-size:45px;
+margin-bottom:60px;
+text-align:center;
+font-weight:700;
+position:relative;
+display:inline-block;
+width:100%;
+}
+
+title::after{
+content:'';
+display:block;
+width:80px;
+height:4px;
+background:linear-gradient(90deg, #38bdf8, #a78bfa);
+margin:20px auto 0;
+border-radius:2px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(56, 189, 248, 0.2);
+transition:transform 0.3s ease;
+border:3px solid #38bdf8;
+}
+
+.about img:hover{
+transform:scale(1.05);
+}
+
+.about p{
+font-size:18px;
+margin-bottom:20px;
+color:#cbd5e1;
+line-height:1.8;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+gap:25px;
+}
+
+.skill{
+background:linear-gradient(135deg, #1e293b, #334155);
+padding:30px 20px;
+border-radius:12px;
+text-align:center;
+font-weight:600;
+font-size:18px;
+transition:all 0.3s ease;
+border:2px solid transparent;
+position:relative;
+overflow:hidden;
+}
+
+.skill::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+transition:left 0.5s ease;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+border-color:#38bdf8;
+box-shadow:0 15px 35px rgba(56, 189, 248, 0.2);
+background:linear-gradient(135deg, #334155, #1e293b);
+}
+
+.skill:hover::before{
+left:100%;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+gap:30px;
+}
+
+.project{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0, 0, 0, 0.3);
+transition:all 0.3s ease;
+border:2px solid #334155;
+}
+
+.project:hover{
+transform:translateY(-15px);
+box-shadow:0 25px 50px rgba(56, 189, 248, 0.2);
+border-color:#38bdf8;
+}
+
+.project img{
+width:100%;
+height:200px;
+object-fit:cover;
+transition:transform 0.3s ease;
+filter:brightness(0.8);
+}
+
+.project:hover img{
+filter:brightness(1);
+transform:scale(1.1);
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+margin-bottom:12px;
+font-size:22px;
+color:#38bdf8;
+font-weight:700;
+}
+
+.project-content p{
+color:#cbd5e1;
+font-size:16px;
+line-height:1.6;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact{
+text-align:center;
+background:linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(167, 139, 250, 0.1));
+padding:60px;
+border-radius:20px;
+border:2px solid #38bdf8;
+}
+
+.contact p{
+font-size:20px;
+margin-bottom:30px;
+color:#e0e7ff;
+}
+
+.icons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.icons a{
+color:white;
+font-size:40px;
+transition:all 0.3s ease;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;ackground:linear-gradient(135deg, #38bdf8, #a78bfa);
+border-radius:50%;
+box-shadow:0 10px 25px rgba(56, 189, 248, 0.2);
+}
+
+.icons a:hover{
+transform:scale(1.2) translateY(-5px);
+box-shadow:0 15px 35px rgba(56, 189, 248, 0.4);
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:0;
+color:#94a3b8;
+font-weight:500;
+border-top:2px solid #38bdf8;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media(max-width:768px){
+header h1{
+font-size:40px;
+}
+
+header p{
+font-size:18px;
+}
+
+.about{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+section{
+padding:60px 5%;
+}
+
+title{
+font-size:35px;
+}
+
+.icons{
+gap:20px;
+}
+
+.icons a{
+width:50px;
+height:50px;
+font-size:30px;
+}
+
+.btn{
+padding:12px 30px;
+font-size:16px;
+}
+}
