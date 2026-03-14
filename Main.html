@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Mansour Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+color:#94a3b8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+font-size:35px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+}
+
+.project img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-content{
+padding:20px;
+}
+
+.project-content h3{
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.icons{
+margin-top:20px;
+}
+
+.icons a{
+color:white;
+margin:10px;
+font-size:25px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Ahmed Mansour</h1>
+
+<p>Power BI Specialist | Frontend Developer</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</header>
+
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div>
+
+<p>
+I am an Information Systems student passionate about data analysis and web development.
+I specialize in building interactive dashboards using Power BI and developing responsive web interfaces.
+</p>
+
+<br>
+
+<p>
+My goal is to transform raw data into meaningful insights that support data-driven decisions.
+</p>
+
+</div>
+
+<img src="profile.jpg">
+
+</div>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Power BI</div>
+<div class="skill">Data Visualization</div>
+<div class="skill">DAX</div>
+<div class="skill">Power Query</div>
+<div class="skill">SQL</div>
+<div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+
+<div class="project">
+
+<img src="dashboard1.png">
+
+<div class="project-content">
+
+<h3>Sales Dashboard</h3>
+
+<p>
+Interactive Power BI dashboard for analyzing sales performance,
+revenue trends, and regional performance.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="dashboard2.png">
+
+<div class="project-content">
+
+<h3>Customer Analysis Dashboard</h3>
+
+<p>
+Data visualization project showing customer segmentation
+and purchasing behavior.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="website.png">
+
+<div class="project-content">
+
+<h3>Responsive Website</h3>
+
+<p>
+Frontend website built using HTML, CSS, and JavaScript
+with responsive design.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: yourmail@gmail.com</p>
+
+<div class="icons">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Ahmed Mansour | Portfolio</p>
+
+</footer>
+
+</body>
+</html>
